@@ -1,0 +1,8 @@
+.player-timedtext {
+  display: flex!important;
+  justify-content: center;
+}
+
+.player-timedtext-text-container {
+  left: auto!important;
+}

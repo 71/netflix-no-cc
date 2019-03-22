@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Netflix CC Remover",
+  "version": "1.0",
+
+  "description": "Removes closed captions from subtitles on Netflix.",
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.netflix.com/watch/*"],
+      "run_at": "document_idle",
+      "css": ["index.css"],
+      "js": ["index.js"]
+    }
+  ]
+}
