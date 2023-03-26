@@ -11,8 +11,8 @@ function removeClosedCaptions() {
 
       for (const e of el.children) {
         for (const n of e.childNodes) {
-          if (n.nodeValue)
-            n.nodeValue = n.nodeValue.replace(/ *-? *\[.+?\] */g, '')
+          if (n.innerText)
+            n.innerText = n.innerText.replace(/ *-? *\[.+?\] */g, '')
         }
       }
     }
